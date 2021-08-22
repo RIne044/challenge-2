@@ -3,17 +3,25 @@ function validate(){
     let emailRegex =  /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
     let errorOutput = document.getElementById("error")
 if (email.value===""){
-   errorOutput.textContent  = "Please provide a valid Email";
+   errorOutput.textContent  = "Please provide a valid email address";
    errorOutput.style.color = "red";
-   email.style.border = "1px solid red"
+   errorOutput.style.fontSize= "10px";
+   errorOutput.style.textAlign= "initial";
+   email.style.border = "1px solid red";
 }
-if (!emailRegex.test(email.value)){
-    errorOutput = "Enter a valid email"
+if (!(emailRegex.test(email.value))){
+    errorOutput.textContent = "please enter a valid email address";
+    errorOutput.style.fontSize= "10px";
+    errorOutput.style.textAlign= "initial";
+    errorOutput.style.color = "red";
+    email.style.border = "1px solid red";
    }
 else{
-   errorOutput = "Email sent"
+   errorOutput.textContent = "Email sent";
+   errorOutput.style.color = "green";
+   errorOutput.style.fontSize= "10px";
+   errorOutput.style.textAlign= "";
+   email.style.border = "1px solid green";
    }
-   
-
     console.log(errorOutput)
 }
