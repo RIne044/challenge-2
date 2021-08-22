@@ -352,22 +352,25 @@
       margin-top: 25px;
       width: 100%;
     }
+    .mail{
+        flex-direction: column;
+    }
     .email {
-      width: 250px;
+      width: 280px;
       padding: 10px;
     }
   
     .email-box > span {
-      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
     .press {
-      width: 280px;
+      width: 250px;
       padding: 10px;
     }
     .backgroundpic {
-      margin: 20px;
+      margin: 80px;
       width: 300px;
       height: 200px;
     }
