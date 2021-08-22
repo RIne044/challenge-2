@@ -5,60 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon-32x32.png" type="image/png" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Libre Franklin"
-    />
-    <link rel="stylesheet" href="indec.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre Franklin"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="indec.css" />
     <title>coming-soon-page-starter</title>
+    </head>
   <body>
     <div class="par">
-       <div class="logo">
+       <div class="logo1">
           <img src="images/logo.svg" alt="Logo" />
         </div>
-
         <div class="txt">
-          <p>We are launching <strong>soon!</strong></p>
+          <p>We are launching <strong>soon!</strong></p><br>
+          <h5>Subscribe and get notified</h5><br>
         </div>
-
-        <div class="txto"> Subscribe and get notified </div>
-
-        <div class="notify-form">
-          <div class="email-box">
-            <input
-              type="email"
-              placeholder="Your email address"
-              class="email"
-            />
-            <span class="error-message"></span>
-          
+        <div class="form1">
+          <div class="mail"></div>
+           <div class="email-box">
+            <input type="email" placeholder="Your email address"class="email" id="email"/>
+           </div>     
+            <div class="button-box">
+             <button class="press" onclick="validate()">Notify Me</button>
+            </div>
           </div>
-
-          <div class="button-box">
-              <button class="cta"> Notify Me </button>
+         <div class="error-div" id="error-div">
+          <span id="error"></span>
+        </div>
           </div>
+          </div>
+        </div><br>
+        <div class="backgroundpic">
+          <img src="images/illustration-dashboard.png" alt="illustration-dashboard" />
         </div>
-
-        <div class="front-image">
-          <img
-            src="images/illustration-dashboard.png" alt="illustration-dashboard"
-          />
-        </div>
-
         <div class="icons">
-          <div>
-            <i class="fab fa-facebook-f"></i>
-          </div>
-
-          <div>
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div>
-            <i class="fab fa-instagram"></i>
-          </div>
+          <div class="logo"><ion-icon class="fa fa-facebook icon" name="logo-facebook"></ion-icon></div>
+          <div class="logo"><ion-icon class="fa fa-twitter icon" name="logo-twitter"></ion-icon></div>
+          <div class="logo"><ion-icon class="fa fa-instagram icon" name="logo-instagram"></ion-icon></div>
         </div>
-
         <footer>&copy;Copyright Ping. All rights reserved.</footer>
     </div>
   </body>
+  <script src="script.js" defer>
+
+    </script>
 </html>
