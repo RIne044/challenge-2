@@ -345,7 +345,7 @@
       margin: 10px;
     }
     .form1 {
-      flex-direction: row;
+      flex-direction: column;
     }
   
     .button-box {
@@ -355,20 +355,22 @@
     .mail{
         flex-direction: column;
     }
-    .email {
-      width: 280px;
-      padding: 10px;
-    }
-  
     .email-box > span {
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+    
+    }
+    .error-div{
+      align-items: center;
+
     }
     .press {
-      width: 250px;
+      margin: 10px;
+      width: 230px;
       padding: 10px;
+      align-items: center;
     }
+   
     .backgroundpic {
       margin: 80px;
       width: 300px;
